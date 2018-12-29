@@ -4,6 +4,13 @@
 <title>Category Five - Contact</title>
 <link rel="stylesheet" href="css/bulma.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style type="text/css">
+  select,
+  .select{
+    width:100%;
+  }
+
+</style>
 </head>
 
 <body>
@@ -42,29 +49,100 @@
     <div class="container">
       <h2 class="title is-1 has-text-centered">Contact</h2>
       <div class="columns is-tablet">
-        <div class="column ">
-        <h4 class="title">Address</h4>
-        <address class="">
-          <strong>Category 5</strong><br>
-          400 Williams ave<br>
-          11207 Brooklyn,NY<br>
-          <i class="fas fa-phone"></i><a href="tel:+(718) 642-9542"> (718) 642-9542</a><br>
+        <div class="column">
+          <h4 class="title">Address:</h4>
+          <address class="">
+            <strong>Category 5</strong><br>
+            400 Williams ave<br>
+            11207 Brooklyn,Ny<br>
+            <i class="fas fa-fw fa-phone"></i><a href="tel:+718-642-9542"> 718-642-9542</a><br>
             <i class="fas fa-envelope"><a href="mailto:mflorence@gmail.com"> mflorence1989@gmail.com</a></i>
-
-        </address>
+          </address>
         </div>
         <div class="column">
-          <h4 class="title">Opening Hours:</h4>
-          <p> Monday - Thursday 8 am -8pm<br>
-              Friday - Saturday  8 am -10 pm<br>
-              Sunday - 8 am - 3pm
-            <br>
-
-          </p>
+        <h4 class="title">Opening hours</h4>
+        <p>Monday-Thursday 8 am - 8 pm<br>
+          Friday-Saturday 8 am - 8 pm<br>
+          Sunday - CLOSED<br>
+        </p>
         </div>
       </div>
-      </div>
+      <div class="columns">
+        <div class="column ">
+        <h4 class="title">Send us a message.</h4>
+        <form>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label" for="name">Name</label>
+                <div class="control has-icons-left">
+                  <input type="text" id="name" class="input" placeholder="FirstName LastName" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-fw fa-user"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <div class="control has-icons-left">
+                  <input type="email" id="email"class="input" placeholder="example@gmail.com" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label" for="telephone">Telephone</label>
+                <div class="control has-icons-left">
+                  <input type="tel" id="telephone" class="input" placeholder="(111)-111-1111" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-fw fa-phone"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="select">Depart</label>
+                <div class="control has-icons-left">
+                  <div class="select">
+                  <select id="select" aria-describedby="select-helpBlock" required>
+                  <option value="">select here</option>
+                  <option value="business">Business</option>
+                  <option value="sale">sale</option>
+                  <option value="support">home</option>
+                  </select>
+                  </div>
+
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <small class="form-text" id="select-helpBlock">
+                  Please select the recipient of your message.
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label"for="textarea">Message</label>
+            <div class="control">
+              <textarea  class="textarea" id="textarea" rows="5" placeholder="right your message here" required cols="80"></textarea>
+            </div>
+          </div>
+          <button type="submit"class="button is-primary" >Submit</button>
+          <button type="reset"class="button" >clear</button>
+        </form>
+        </div>
+      </div>
+    </div>
   </section>
   <footer class="footer">
     <div class="container">
@@ -106,7 +184,7 @@
             400 Williams ave<br>
             11207 Brooklyn,NY<br>
             <i class="fas fa-fw fa-phone"></i><a href="tel:+718-642-9542">718-642-9542</a><br>
-            <i class="fas fa-envelope"><a href="mailto:mflorence@gmail.com">mflorence1989@gmail.com</a></i>
+            <i class="fas fa-envelope"><a href="mailto:mflorence@gmail.com"> mflorence1989@gmail.com</a></i>
           </address>
         </div>
       </div>
